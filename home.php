@@ -12,7 +12,7 @@
     <!-- https://fontawesome.com/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="ngato.css">
+    <link rel="stylesheet" href="css/ngato.css">
     <!--
 	Product Admin CSS Template
 	https://templatemo.com/tm-524-product-admin
