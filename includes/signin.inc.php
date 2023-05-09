@@ -2,22 +2,22 @@
 
 if (isset($_POST["submit"])) {
     
-    $username = $_POST["name"];
-    $password = $_POST["pwd"];
+    $email = $_POST["name"];
+    $pwd = $_POST["password"];
 
     require_once 'dbconnect.php';
     require_once 'functions.php';
 
-    if(EmptyInputLogin($username, $password) !== false){
-        header("Location: ../signin.php?error=emptyinput");
+    if(EmptyInputLogin($email, $pwd) !== false){
+        header("Location: ../form.php?error=emptylogininput");
         exit();
     }
 
-    loginUser($conn, $username, $password);  
+    loginUser($conn, $email, $pwd);  
 
 }
 else{
-    header("Location: ../signin.php?error=loginimpossible");
+    header("Location: ../form.php?error=loginimpossible");
     exit();
 }
 

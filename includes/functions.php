@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 //verifier si le formulaire d'enregistrement est vide
 function emptyInput($username, $email, $pwd) {
     if (empty($username) || empty($email) || empty($pwd)) {
@@ -59,13 +61,31 @@ function createUser($conn, $username, $email, $pwd) {
     $query = "INSERT INTO user (name, email, password) VALUES (?, ?, ?);";
     $stmt = $conn->prepare($query);
 
-    $hashpwd = password_hash($pwd, PASSWORD_DEFAULT);
+    //$pwdHashed = password_hash($pwd, PASSWORD_DEFAULT);
 
-    $stmt->bind_param("sss", $username, $email, $hashpwd);
+    $stmt->bind_param("sss", $username, $email, $pwd);
     $stmt->execute();
     header("location: ../form.php?error=none");
 }
 
-function loginUser ($conn, $username, $pwd) {
+function loginUser ($conn, $email, $pwd) {
+    $emailExist = emailExist($conn, $email);
+    
 
+    if($emailExist === false) {
+        header("location: ../form.php?error=wrongemail");
+        exit();
+    }
+
+
+    if ($pwd === $emailExist["password"]) {
+        session_start();
+        $_SESSION["Uid"]   = $emailExist["id"];
+        $_SESSION["Username"] = $emailExist["name"];
+        header("location: ../home.php?error=none");
+        exit();
+    } else {
+        header('location: ../form.php?error=wrongpassword');
+        exit(); 
+    }
 }
