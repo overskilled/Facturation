@@ -11,7 +11,7 @@
               <table class="table table-hover tm-table-small tm-product-table">
                 <thead>
                   <tr>
-                    <th scope="col">&nbsp;</th>
+                    <th scope="col">ID</th>
                     <th scope="col">customer</th>
                     <th scope="col">open invoices</th>
                     <th scope="col">paid invoices</th>
@@ -50,193 +50,13 @@
                   }
               }
               ?>
-                <tbody>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>1,450</td>
-                    <td>550</td>
-                    <td>28 March 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                     <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon "></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>1,250</td>
-                    <td>750</td>
-                    <td>21 March 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                     <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>1,100</td>
-                    <td>900</td>
-                    <td>18 Feb 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>1,400</td>
-                    <td>600</td>
-                    <td>24 Feb 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>1,800</td>
-                    <td>200</td>
-                    <td>22 Feb 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                     <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>1,000</td>
-                    <td>1,000</td>
-                    <td>20 Feb 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>500</td>
-                    <td>100</td>
-                    <td>10 Feb 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>1,000</td>
-                    <td>600</td>
-                    <td>08 Feb 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>1,200</td>
-                    <td>800</td>
-                    <td>24 Jan 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>1,600</td>
-                    <td>400</td>
-                    <td>22 Jan 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"></td>
-                    <td>2,000</td>
-                    <td>400</td>
-                    <td>21 Jan 2019</td>
-                    <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                     <td>
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="fas fa-edit tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                </table>
             </div>
             <!-- table container -->
             <a
-              href="ajout_produit.php"
-              class="btn btn-primary btn-block text-uppercase mb-3">ajouter un produit</a>
-            <button class="btn btn-primary btn-block text-uppercase">
-              supprimer un produit
-            </button>
+              href="clients.php"
+              class="btn btn-primary btn-block text-uppercase mb-3">ajouter un Client</a>
+            
           </div>
         </div>
         <!--div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
