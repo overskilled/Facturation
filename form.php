@@ -35,7 +35,8 @@
 			</div>
 			<span>or use your account</span>
 			<input type="email" name="name" placeholder="Email" />
-			<input type="password" name="email" placeholder="Password" />
+			<input type="password" name="password" id="password" placeholder="Password" />
+            
 			<a href="#">Forgot your password?</a>
 			<button name="submit">Sign In</button>
 		</form>
@@ -72,6 +73,15 @@
         }
         if ($_GET["error"] == "none") {
             echo "<p>Sign up successful</p>";
+        }
+        if ($_GET["error"] == "wrongemail") {
+            echo "<p>Wrong login email</p>";
+        }
+        if ($_GET["error"] == "wrongpassword") {
+            echo "<p>Incorrect login password</p>";
+        }
+        if ($_GET["error"] == "emptylogininput") {
+            echo "<p>Fill in all thee fields</p>";
         }
     }
 
