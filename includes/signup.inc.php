@@ -3,37 +3,33 @@ require_once "dbconnect.php";
 require_once "functions.php";
 
 if(isset($_POST["submit"])) {
-    $name = $_POST["name"];
+    $username = $_POST["username"];
     $email = $_POST["email"];
     $pwd = $_POST["password"];
-    $pays = $_POST["pays"];
+    
 
-    if (emptyInput() !== false) {
-        header("location: ..signup.php?error=emptyinput");
+    if (emptyInput($username, $email, $pwd) !== false) {
+        header("location: ../form.php?error=emptyinput");
         exit();
     }
 
-    if (invalidUsername() !== false) {
-        header("location: ..signup.php?error=invaliduid");
+    if (invalidUsername($username) !== false) {
+        header("location: ../form.php?error=invaliduid");
         exit();
     }
 
-    if (invalideEmail() !== false) {
-        header("location: ..signup.php?error=invalidemailt");
+    if (invalideEmail($email) !== false) {
+        header("location: ../form.php?error=invalidemail");
         exit();
     }
 
-    if (mismatchPassword() !== false) {
-        header("location: ..signup.php?error=passworddontmatcht");
+    
+    if (emailExist($conn, $email) !== false) {
+        header("location: ../form.php?error=emailexist");
         exit();
     }
 
-    if (usernameTaken() !== false) {
-        header("location: ..signup.php?error=usernametaken");
-        exit();
-    }
-
-
+    createUser($conn, $username, $email, $pwd);
 } else {
-    header ("location: ..signup.php");
+    header ("location: ../form.php.php");
 }
