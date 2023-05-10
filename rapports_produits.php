@@ -25,7 +25,7 @@
                 $result = mysqli_query($conn , $sql);
                 if($result){
                     while ($row = mysqli_fetch_assoc($result)) {
-                      $idclients =  $row['Id'];
+                      $idproduit =  $row['Id'];
                       $nom       = $row['nom_produit'];
                       $des       = $row['description'];
                       $unit      = $row['unit'];
@@ -38,12 +38,12 @@
                                 <th class="tm-product-name" scope="row">'.$nom.' </th>
                                 <td>'.$vatPrice.'</td>
                                 <td>'.$ttc.'</td>
-                                  <td><a href="delete_client.php?deleteidclients='.$idclients.'" class="tm-product-delete-link">
+                                  <td><a href="delete_product.php?deleteidproduit='.$idproduit.'" class="tm-product-delete-link">
                                     <i class="far fa-trash-alt tm-product-delete-icon"></i>
                                   </a>
                                 </td>
                                 <td>
-                                  <a href="update_client.php?Updateidclients='.$idclients.'" class="tm-product-delete-link">
+                                  <a href="update_product.php?Updateidproduit='.$idproduit.'" class="tm-product-delete-link">
                                     <i class="fas fa-edit tm-product-delete-icon "></i>
                                   </a></td>
 
