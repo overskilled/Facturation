@@ -3,9 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p class="text-white mt-5 mb-5">Welcome back, <?php 
-                    $name = $_SESSION["name"];
-                    if (isset($_SESSION["id"])) {echo "<b>.$name.</b>";}?></p>
+                    <p class="text-white mt-5 mb-5">Welcome back, </p>
                 </div>
             </div>
             <!-- row -->
