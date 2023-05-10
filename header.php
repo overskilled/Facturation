@@ -1,5 +1,7 @@
 <?php
     session_start();
+    include_once "includes/dbconnect.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -75,6 +77,14 @@
                             <a class="nav-link" href="entreprise.php">
                                 <i class="fa fa-user-circle"></i>
                                 mon compte
+                            </a>
+                        </li>  
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="includes/Logout.php">
+                                <i class="fa fa-user-circle"></i>
+                                log out
                             </a>
                         </li>  
                     </ul>
