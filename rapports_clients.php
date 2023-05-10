@@ -35,12 +35,12 @@
                               <td>'.$nom_client.'</td>
                               <td>'.$prenom_client.'</td>
                               <td>'.$email.'</td>
-                                <td><a href="delete.php?deleteidclients='.$idclients.'" class="tm-product-delete-link">
+                                <td><a href="delete_client.php?deleteidclients='.$idclients.'" class="tm-product-delete-link">
                                   <i class="far fa-trash-alt tm-product-delete-icon"></i>
                                 </a>
                               </td>
                               <td>
-                                <a href="Update.php?Updateidclients='.$idclients.'" class="tm-product-delete-link">
+                                <a href="update_client.php?Updateidclients='.$idclients.'" class="tm-product-delete-link">
                                   <i class="fas fa-edit tm-product-delete-icon "></i>
                                 </a></td>
 
